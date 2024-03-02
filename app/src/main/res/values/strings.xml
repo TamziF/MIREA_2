@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MIREA_2</string>
+    <string name="guess_next">Guess next</string>
+    <string name="say_his_name">SAY HIS NAME</string>
+    <string name="write_here">Write here</string>
+    <string name="say_my_name">SAY MY NAME</string>
+    <string name="are_you_right">Are you right?</string>
+    <string name="edit_text">Edit text</string>
+    <string name="say_hi">Say Hi</string>
+    <string name="hello_relative">HELLO RELATIVE</string>
+</resources>
