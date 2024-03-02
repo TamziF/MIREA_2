@@ -55,4 +55,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
     );
+
+    public void onClickClack(View view){
+        Intent intent = new Intent(this, ActivityConstraint.class);
+        intent.putExtra("kuku", "Это декларация");
+        startActivity(intent);
+    }
 }
