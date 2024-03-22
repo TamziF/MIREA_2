@@ -8,4 +8,10 @@
     <string name="edit_text">Edit text</string>
     <string name="say_hi">Say Hi</string>
     <string name="hello_relative">HELLO RELATIVE</string>
+    <string name="linearConstraint_request_key">fromLinearToConstraint</string>
+    <string name="constraintLinear_request_key">fromConstraintToLinear</string>
+    <string name="fromLinearToConstraint_bundle_key">Tate</string>
+    <string name="fromConstraintToLinear_bundle_key">right?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

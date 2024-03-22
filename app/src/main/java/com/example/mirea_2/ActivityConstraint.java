@@ -8,11 +8,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.example.mirea_2.databinding.ActivityConstraintBinding;
 
 public class ActivityConstraint extends AppCompatActivity {
 
-    private ActivityConstraintBinding binding;
+    /*private ActivityConstraintBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,5 +35,5 @@ public class ActivityConstraint extends AppCompatActivity {
                 finish();
             }
         });
-    }
+    }*/
 }

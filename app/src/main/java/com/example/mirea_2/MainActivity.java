@@ -28,35 +28,19 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ActivityConstraint.class);
-                intent.putExtra("tate", binding.editText.getText());
-                launcher.launch(intent);
-            }
-        });
+        /*getSupportFragmentManager().beginTransaction()
+                .setReorderingAllowed(true)
+                .add(R.id.first_container, FragmentLinear.class, null)
+                .commit();
+
+        getSupportFragmentManager().beginTransaction()
+                .setReorderingAllowed(true)
+                .add(R.id.second_container, FragmentConstraint.class, null)
+                .commit();*/
 
     }
 
-    private final ActivityResultLauncher<Intent> launcher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            new ActivityResultCallback<ActivityResult>() {
-                @Override
-                public void onActivityResult(ActivityResult result) {
-                    Intent data = result.getData();
-                    if (data == null) return;
-                    Log.v("HEISEN", data.getStringExtra("right?"));
-
-                    if(Objects.equals(data.getStringExtra("right?"), "Heisenberg"))
-                        binding.image.setImageResource(R.drawable.you_are_right);
-                    else
-                        binding.image.setImageResource(R.drawable.tiltheizenjpg);
-                }
-            }
-    );
-
-    public void onClickClack(View view){
+    public void onClickClack(View view) {
         Intent intent = new Intent(this, ActivityConstraint.class);
         intent.putExtra("kuku", "Это декларация");
         startActivity(intent);
